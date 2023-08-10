@@ -17,9 +17,20 @@ namespace LigesomBålhyttemenmedCSGO
         public int Deaths { get; set; }
 
 
+        // Constructor
+
+        public Player(int id, string nickname, int health, int kills, int deaths)
+        {
+            ID = id;
+            Nickname = nickname;
+            Health = health;
+            Kills = kills;
+            Deaths = deaths;
+        }
+
         public override string ToString()
         {
-            return $"Player ID: " + ID + "\nNickname:" + Nickname + "\nHealth: " + Health + "\nKills: " + Kills + "\nDeaths: " + Deaths;
+            return $"Player ID: " + ID + "\nNickname: " + Nickname + "\nHealth: " + Health + "\nKills: " + Kills + "\nDeaths: " + Deaths;
         }
 
     }
