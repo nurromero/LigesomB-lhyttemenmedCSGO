@@ -9,30 +9,31 @@ namespace LigesomBålhyttemenmedCSGO
     public class Player
 
     {
-        private string teamSelected { get; set; }
+        private string _team;
 
-        public string TeamSelected
+        private string teamSelected 
         {
-            get { return teamSelected; }
-            set { teamSelected = value; }
+            get { return _team; }
         }
 
         // Properties
-
-
         public int ID { get; }
         public string Nickname { get; }
         public int Health { get; }
         public int Kills { get; }
         public int Deaths { get; }
+        public string Team
+        {
+            get { return _team; }
+        }
 
 
         // Constructor
-
-        public Player(int id, string nickname, int health, int kills, int deaths)
+        public Player(int id, string nickname, string team, int health, int kills, int deaths)
         {
             ID = id;
             Nickname = nickname;
+            _team = team;
             Health = health;
             Kills = kills;
             Deaths = deaths;
@@ -40,7 +41,7 @@ namespace LigesomBålhyttemenmedCSGO
 
         public override string ToString()
         {
-            return $"Player ID: " + ID + "\nNickname: " + Nickname + "\nHealth: " + Health + "\nKills: " + Kills + "\nDeaths: " + Deaths;
+            return $"Player ID: " + ID + "\nNickname: " + Nickname + "\nTeam: " + _team + "\nHealth: " + Health + "\nKills: " + Kills + "\nDeaths: " + Deaths;
         }
 
     }

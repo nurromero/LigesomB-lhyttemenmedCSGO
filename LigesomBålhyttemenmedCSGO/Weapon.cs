@@ -12,6 +12,7 @@ namespace LigesomBålhyttemenmedCSGO
         // Instance fields
         private int _price;
         private string _team;
+        private string _avaibleForTeam;
 
 
         // Properties
@@ -20,6 +21,10 @@ namespace LigesomBålhyttemenmedCSGO
         public int Damage { get; }
         public int Ammo { get; }
         public int ReloadTime { get; }
+        public string AvailableForTeam
+        {
+            get { return _avaibleForTeam; }
+        }
 
 
         // Constructor
