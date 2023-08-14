@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,7 +39,32 @@ namespace LigesomBålhyttemenmedCSGO
         {
             return armoury.TryGetValue(id, out weapon);
         }
+
+        // CRUD METHODS
+        public void Create(int id, Weapon weapon)
+        {
+            armoury[id] = weapon;
+        }
+
+        public void Read(int id)
+        {
+
+        }
+
+        public void Update()
+        {
+
+        }
+
+        public void Delete(int id)
+        {
+            armoury.Remove(id);
+        }
+
     }
+
+   
+          
 
 }
 

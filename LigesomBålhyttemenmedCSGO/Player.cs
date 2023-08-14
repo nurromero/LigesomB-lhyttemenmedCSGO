@@ -9,7 +9,7 @@ namespace LigesomBålhyttemenmedCSGO
     public class Player
 
     {
-        private string teamSelected;
+        private string teamSelected { get; set; }
 
         public string TeamSelected
         {
@@ -18,6 +18,7 @@ namespace LigesomBålhyttemenmedCSGO
         }
 
         // Properties
+
 
         public int ID { get; }
         public string Nickname { get; }
