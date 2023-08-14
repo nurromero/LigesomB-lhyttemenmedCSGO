@@ -7,14 +7,23 @@ using System.Threading.Tasks;
 namespace LigesomBålhyttemenmedCSGO
 {
     public class Player
+
     {
+        private string teamSelected;
+
+        public string TeamSelected
+        {
+            get { return teamSelected; }
+            set { teamSelected = value; }
+        }
+
         // Properties
 
-        public int ID { get; set; }
-        public string Nickname { get; set; }
-        public int Health { get; set; }
-        public int Kills { get; set; }
-        public int Deaths { get; set; }
+        public int ID { get; }
+        public string Nickname { get; }
+        public int Health { get; }
+        public int Kills { get; }
+        public int Deaths { get; }
 
 
         // Constructor
