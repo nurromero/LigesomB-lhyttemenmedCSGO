@@ -8,6 +8,7 @@ namespace LigesomBålhyttemenmedCSGO
 {
     public class Weapon
     {
+        //test
 
         // Properties
         
